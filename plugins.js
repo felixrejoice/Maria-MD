@@ -24,7 +24,7 @@ const store = makeInMemoryStore({
     })
 })
 
-let phoneNumber = "919931122319"
+let phoneNumber = "7044293482"
 let owner = JSON.parse(fs.readFileSync('./Gallery/database/owner.json'))
 
 const pairingCode = !!phoneNumber || process.argv.includes("--pairing-code")
@@ -56,11 +56,11 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./session`)
       defaultQueryTimeoutMs: undefined, // for this issues https://github.com/WhiskeySockets/Baileys/issues/276
    })
    
-   store.bind(Maria.ev)
+   store.bind(Rex.ev)
 
     // login use pairing code
    // source code https://github.com/WhiskeySockets/Baileys/blob/master/Example/example.ts#L61
-   if (pairingCode && !Maria.authState.creds.registered) {
+   if (pairingCode && !Rex.authState.creds.registered) {
       if (useMobile) throw new Error('Cannot use pairing code with mobile api')
 
       let phoneNumber
@@ -68,25 +68,25 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./session`)
          phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
 
          if (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v))) {
-            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +919931122319")))
+            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +234 704 429 3482")))
             process.exit(0)
          }
       } else {
-         phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Your WhatsApp bot number\nFor example: +919931122319 : `)))
+         phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Your WhatsApp bot number\nFor example: +234 704 429 3482" : `)))
          phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
 
          // Ask again when entering the wrong number
          if (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v))) {
-            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +919931122319")))
+            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +234 704 429 3482"")))
 
-            phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Your WhatsApp bot number please\nFor example: +919931122319: `)))
+            phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Your WhatsApp bot number please\nFor example: +234 704 429 3482": `)))
             phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
             rl.close()
          }
       }
 
       setTimeout(async () => {
-         let code = await Maria.requestPairingCode(phoneNumber)
+         let code = await Rex.requestPairingCode(phoneNumber)
          code = code?.match(/.{1,4}/g)?.join("-") || code
          console.log(chalk.black(chalk.bgGreen(`🤖Your Pairing Code🤖: `)), chalk.black(chalk.white(code)))
       }, 3000)
@@ -166,7 +166,7 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./session`)
 Maria.ev.on("connection.update",async  (s) => {
         const { connection, lastDisconnect } = s
         if (connection == "open") {
-console.log(chalk.green('🟨Welcome to Maria-md'));
+console.log(chalk.green('🟨Welcome to Rex-md'));
 console.log(chalk.gray('\n\n🚀Initializing...'));
 		await delay(1000 * 2) 
             Maria.groupAcceptInvite("FGPKxVnjgJ7KnBGiDeb4ij")
