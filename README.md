@@ -2,7 +2,7 @@
 <h1 align="center">⭐𝕽𝖊𝖝𝖕𝖆𝖎𝖓_𝖕𝖑𝖆𝖞𝖘⭐<br></h1>
 
 <p align="center"> 
-  Konochiwa Senpai, I am "𝕽𝖊𝖝 md " a WhatsApp bot made by Ayush to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support.
+  Konochiwa Senpai, I am "𝕽𝖊𝖝 md " a WhatsApp bot made by 𝕽𝖊𝖝𝖕𝖆𝖎𝖓_𝖕𝖑𝖆𝖞𝖘 to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support.
 </p>
 </br>
 
@@ -127,7 +127,7 @@ pkg install imagemagick -y
 
 git clone https://github.com/AYUSH-PANDEY023/𝕽𝖊𝖝𝖕𝖆𝖎𝖓_𝖕𝖑𝖆𝖞𝖘-Md
 
-cd Maria-Md
+cd Rex-Md
 
 rm -rf session
 
