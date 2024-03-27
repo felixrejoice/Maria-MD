@@ -2,7 +2,7 @@ const fs = require('fs')
 const chalk = require('chalk')
 
 //contact details
-global.ownernumber = ['09153673318']
+global.ownernumber = ['7044293482"']
 global.ownername = "𝕽𝖊𝖝𝖕𝖆𝖎𝖓_𝖕𝖑𝖆𝖞𝖘"//owner name
 global.ytname = "YT: RexBotz.inc"
 global.socialm = "GitHub: Ayushpandey023"
@@ -38,7 +38,7 @@ global.autoread_status = false //auto view status/story
 
 //reply messages
 global.mess = {
-    done: '*here you go!* \n\n*🎀 Maria Bot 🎀*\n\n*🧩 Bot link:* \nhttps://github.com/AYUSH-PANDEY023/Rex-MD\n',
+    done: '*here you go!* \n\n*🎀 Rex Bot 🎀*\n\n*🧩 Bot link:* \nhttps://github.com/AYUSH-PANDEY023/Rex-MD\n',
     prem: '*This feature can be used by premium user only*',
     admin: '*This feature can be used by admin only*',
     botAdmin: '*This feature can only be used when the bot is a group admin* ',
