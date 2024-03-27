@@ -16,10 +16,10 @@ global.packname = 'Sticker By'
 global.author = 'REX Bot'
 //console view/theme
 global.themeemoji = '🧩'
-global.wm = "Ayush botz inc."
+global.wm = "𝕽𝖊𝖝𝖕𝖆𝖎𝖓_𝖕𝖑𝖆𝖞𝖘 botz inc."
 
 //theme link
-global.link = 'https://whatsapp.com/channel/0029VaImo5ZG3R3qjKOdyr1I'
+global.link = 'https://chat.whatsapp.com/CA0yLjf8WhfEK8yBXhdq15'
 
 //custom prefix
 global.prefa = ['.']
