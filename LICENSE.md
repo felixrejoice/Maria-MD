@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2023 Ayush
+Copyright (c) 2023 𝕽𝖊𝖝𝖕𝖆𝖎𝖓_𝖕𝖑𝖆𝖞𝖘
 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
